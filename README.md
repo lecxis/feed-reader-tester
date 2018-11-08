@@ -3,8 +3,8 @@
 ## Table of Contents
 
 * [Instructions](#instructions)
-* [User expectation](#User expectation)
-* [App dependencies](#App dependencies)
+* [User expectation](#User-expectation)
+* [App dependencies](#App-dependencies)
 
 ## Instructions
 

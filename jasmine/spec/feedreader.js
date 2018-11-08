@@ -90,25 +90,33 @@ $(function() {
 		     loadFeed(0,function () {done();});
 	 });
 
-	 it('there is a single entry element left element within the .feed container', function(done){
-	     expect($('.feed').html()).not.toBe("");
+	 it('there is at least a single entry element left within the .feed container after loadFeed executes', function(done){
+	     expect($('.feed .entry').html()).not.toBe("");
 	     done();
 	  });
  });
     /* TODO: Write a new test suite named "New Feed Selection" */
 	describe('New Feed Selection', function() {
-	var oldFeed= $('.feed').html()
+	   var oldFeed,newFeed;
 
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
 		beforeEach(function(done){
-		    loadFeed(0,function () {done();});
+		    loadFeed(0,function () {
+            oldFeed= $('.feed .entry').html();
+            console.log(oldFeed);
+            loadFeed(1, function(){
+                newFeed= $('.feed .entry').html();
+                console.log("new feed "+newFeed);
+                done();
+              });
+          });
 	 });
 
 	 it('content changes after loading new feed', function(done){
-	     expect($('.feed').html()).not.toBe(oldFeed);
+	     expect(oldFeed).not.toEqual(newFeed);
 	     done();
 	  });
 
