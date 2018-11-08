@@ -1,5 +1,3 @@
-
-21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
 # Feed Reader Tester Project
 
 ## Table of Contents
