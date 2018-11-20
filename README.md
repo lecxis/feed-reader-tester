@@ -8,7 +8,7 @@
 
 ## Instructions
 
-The feed reader application uses the Google Feed Reader API to grab RSS feeds as JSON object we can make use of. It also uses the Handlebars templating library and jQuery in performing DOM operation used in displaying the feeds to the users. The application uses the Jasmine 2.1.2 library, located in the jasmine folder, in carrying out test. Project folder conatins an index.html file which is run on the browser. It contains css folder where the style.css file is stored and a folder for storing the fonts. The app.js file in the js folder is where the application functionalities is located. The various test suites are written in the feedreader.js file in the spec folder.
+The feed reader application uses the Google Feed Reader API to grab RSS feeds as JSON object we can make use of. It also uses the Handlebars templating library and jQuery in performing DOM operation used in displaying the feeds to the users. The application uses the Jasmine 2.1.2 library, located in the jasmine folder, in carrying out test. Project folder conatins an index.html file which is run on the browser. It contains css folder where the style.css file is stored and a folder for storing the fonts. The app.js file in the js folder is where the application functionalities is located. The various test suites are written in the feedreader.js file in the spec folder. In order to see the various result via the index.html file, you can download the files locally by cloning the repository or by downloading the zip files.
 
 ## User expectation
 
